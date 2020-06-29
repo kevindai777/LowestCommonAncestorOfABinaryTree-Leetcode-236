@@ -48,6 +48,7 @@ function dfs(node, p, q) {
         return false
     }
         
+    //These statements ask if the left/right pointers will eventually get to one of the nodes
     let left = dfs(node.left, p, q) ? 1 : 0
     let right = dfs(node.right, p, q) ? 1 : 0
         
