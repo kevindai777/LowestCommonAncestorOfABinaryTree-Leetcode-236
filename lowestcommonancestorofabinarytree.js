@@ -53,10 +53,12 @@ function dfs(node, p, q) {
         
     let mid = (node == p || node == q) ? 1 : 0
         
+    //Here, as long as two of the conditions are met, then we have an ancestor.
     if (mid + left + right >= 2) {
         ans = node
     }
         
+    //Follow up to the recursive calls above
     return (mid + left + right > 0)
 }
 dfs(tree.root, p, q)
